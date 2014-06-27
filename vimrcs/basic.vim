@@ -43,6 +43,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Sets Number
+set number
 " Sets how many lines of history VIM has to remember
 set history=700
 
@@ -506,3 +508,11 @@ imap { {}<LEFT>
 imap [ []<LEFT>
 imap ( ()<LEFT>
 """"""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""
+" zen-codingの設定
+""""""""""""""""""""""""""""""
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+let g:user_emmet_leader_key='<C-E>'
+cmap E<CR> Ex<CR>
